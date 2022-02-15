@@ -4,7 +4,9 @@ A Ultimate Python Browser
 Install Link - https://bit.ly/brave3xbyyash
 ====================================================================================================================
 
-
+The Images Folder Really Don't Matter
+U can Just Leave It LOL!
+It's smetimes loaded and sometimes not So Ignore It!
 
 => Coded By Yash And Have Many Features,
 Still In Development But Have Been Improving!

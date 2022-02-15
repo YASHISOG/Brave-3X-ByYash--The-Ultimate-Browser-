@@ -1,4 +1,4 @@
-# Brave-3X--Yash-The-Ultimate-Browser
+# Brave-3X--ByYash-The-Ultimate-Browser
 Featuring Brave 3X - (BeeS 5.0) 
 A Ultimate Python Browser
 ====================================================================================================================

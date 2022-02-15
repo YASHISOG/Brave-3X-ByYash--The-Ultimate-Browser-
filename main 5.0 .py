@@ -1,3 +1,4 @@
+from hashlib import new
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
@@ -64,17 +65,17 @@ class MainWindow(QMainWindow):
         navbar2 = QToolBar()
         self.addToolBar(navbar2)
 
-        back_btn = QAction(' ◀ ', self)
+        back_btn = QAction('⬅(Bk)', self)
         back_btn.setStatusTip("Back to previous page")
         back_btn.triggered.connect(lambda: self.tabs.currentWidget().back())
         navtb.addAction(back_btn)
 
-        next_btn = QAction(' ▶ ', self)
+        next_btn = QAction('➡(Fr)', self)
         next_btn.setStatusTip("Forward to next page")
         next_btn.triggered.connect(lambda: self.tabs.currentWidget().forward())
         navtb.addAction(next_btn)
 
-        reload_btn = QAction(' 🔃 ', self)
+        reload_btn = QAction(' 🔃(R) ', self)
         reload_btn.setStatusTip("Reload page")
         reload_btn.triggered.connect(lambda: self.tabs.currentWidget().reload())
         navtb.addAction(reload_btn)
@@ -144,15 +145,16 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Brave 3X -Yash")
         self.setWindowIcon(QIcon(os.path.join('images', 'ma-icon-64.png')))
 # NavBar 2 ==========================================================================================================
-        tab1 = QAction('Home', self)
-        tab1.triggered.connect(self.main_tab1)
-        navbar2.addAction(tab1)
+
+        new_tab_op = QAction('New Tab➕', self)
+        new_tab_op.triggered.connect(lambda _: self.add_new_tab())
+        navbar2.addAction(new_tab_op)
         tab2 = QAction('Incognito', self)
         tab2.triggered.connect(self.main_tab2)
         navbar2.addAction(tab2)
-        main3 = QAction('Google', self)
-        main3.triggered.connect(self.main_tab3)
-        navbar2.addAction(main3)
+        tab1 = QAction('Google', self)
+        tab1.triggered.connect(self.main_tab1)
+        navbar2.addAction(tab1) 
         main4 = QAction('Yandex', self)
         main4.triggered.connect(self.main_tab4)
         navbar2.addAction(main4)
@@ -162,11 +164,21 @@ class MainWindow(QMainWindow):
         new_btn = QAction('Brave', self)
         new_btn.triggered.connect(self.navigate_tab)
         navbar2.addAction(new_btn)
-# =========================================================================================================================
+
+
+# =================================================================================================================
+# nav bar 2 games and other stuffs
+        
+        snake_game = QAction('SnakeGame', self)
+        snake_game.triggered.connect(self.snake_gameop)
+        navbar2.addAction(snake_game)
+        main3 = QAction('MusicPlayer', self)
+        main3.triggered.connect(self.main_tab3)
+        navbar2.addAction(main3)
         new_btn1 = QAction('TicTacToe', self)
         new_btn1.triggered.connect(self.navigate_tab1)
         navbar2.addAction(new_btn1)
-        aboutproject1 = QAction('AboutOurProject', self)
+        aboutproject1 = QAction('DrawingPad', self)
         aboutproject1.triggered.connect(self.aboutproject)
         navbar2.addAction(aboutproject1)
         ninjagame = QAction('Knife Master', self)
@@ -287,7 +299,7 @@ class MainWindow(QMainWindow):
 # =================================================================================================================
 # navbar2 functions ===============================================================================================
     def navigate_home(self):
-        self.tabs.currentWidget().setUrl(QUrl('http://yash.brizy.site'))
+        self.tabs.currentWidget().setUrl(QUrl('https://google.com'))
     def navigate_tab(self):
         self.tabs.currentWidget().setUrl(QUrl('https://search.brave.com'))
     def navigate_tab1(self):
@@ -297,13 +309,13 @@ class MainWindow(QMainWindow):
     def main_tab2(self):
         self.tabs.currentWidget().setUrl(QUrl('https://duckduckgo.com'))
     def main_tab3(self):
-        self.tabs.currentWidget().setUrl(QUrl('https://google.com'))
+        self.tabs.currentWidget().setUrl(QUrl('https://bit.ly/musicplayeropyash'))
     def main_tab4(self):
         self.tabs.currentWidget().setUrl(QUrl('https://yandex.com/'))
     def main_tab5(self):
         self.tabs.currentWidget().setUrl(QUrl('https://in.search.yahoo.com/?fr2=inr'))
     def aboutproject(self):
-        self.tabs.currentWidget().setUrl(QUrl('https://bit.ly/aboutinegrityop'))
+        self.tabs.currentWidget().setUrl(QUrl('https://bit.ly/drawingpadbyyash'))
     def ninjagamebtn(self):
         self.tabs.currentWidget().setUrl(QUrl('https://bit.ly/ninjagamebtn'))
     def bullseyef(self):
@@ -312,6 +324,8 @@ class MainWindow(QMainWindow):
         self.tabs.currentWidget().setUrl(QUrl('https://bit.ly/flipgameop'))
     def randomimagef(self):
         self.tabs.currentWidget().setUrl(QUrl('https://bit.ly/randomimagebyyash'))
+    def snake_gameop(self):
+        self.tabs.currentWidget().setUrl(QUrl('https://bit.ly/snakegameopbyyash'))
 
 app = QApplication(sys.argv)
 app.setApplicationName("Brave 3X")

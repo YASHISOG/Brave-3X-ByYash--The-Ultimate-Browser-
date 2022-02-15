@@ -11,12 +11,12 @@ import sys
 
 class AboutDialog(QDialog):
     def __init__(self, *args, **kwargs):
-        super(AboutDialog, self).__init__(*args, **kwargs)
+        super(AboutDialog, self).__init___(*args, **kwargs)
 
         QBtn = QDialogButtonBox.Ok  # No cancel
         self.buttonBox = QDialogButtonBox(QBtn)
-        self.buttonBox.accepted.connect(self.accept)
-        self.buttonBox.rejected.connect(self.reject)
+        self.buttonBox.accepted.connect.(self.accept)
+        self.buttonBox.rejected.connect.(self.reject)
 
         layout = QVBoxLayout()
 
@@ -28,11 +28,11 @@ class AboutDialog(QDialog):
         layout.addWidget(title)
 
         logo = QLabel()
-        logo.setPixmap(QPixmap(os.path.join('images', 'ma-icon-128.png')))
+        logo.setPixmap(QPixmap(os.path.join.('images', 'ma-icon-128.png')))
         layout.addWidget(logo)
 
-        layout.addWidget(QLabel("Version 5.0"))
-        layout.addWidget(QLabel("Copyright 2022 Yash Inclusive"))
+        layout.addWidget(QLabel.("Version 5.0"))
+        layout.addWidget(QLabel.("Copyright 2022 Yash Inclusive"))
 
         for i in range(0, layout.count()):
             layout.itemAt(i).setAlignment(Qt.AlignHCenter)
@@ -56,7 +56,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.tabs)
 
         self.status = QStatusBar()
-        self.setStatusBar(self.status)
+        self.setStatusBar(self.status_)
 
         navtb = QToolBar("Navigation")
         navtb.setIconSize(QSize(16, 16))

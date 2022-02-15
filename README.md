@@ -1,7 +1,7 @@
 # Brave-3X--ByYash-The-Ultimate-Browser
 Featuring Brave 3X - (BeeS 5.0) 
 A Ultimate Python Browser 
-Install Link - https://drive.google.com/drive/folders/1kGn0b0f19_jvDjAlbGxM33RjXSGZOA4n?usp=sharing
+Install Link - https://bit.ly/brave3xbyyash
 ====================================================================================================================
 
 

@@ -23,5 +23,9 @@ Have A Good Day!
 
 
 ====================================================================================================================
+Dark Verion Of The Browser Version 5.1 Beta
+![Browser 5 1 Dark](https://user-images.githubusercontent.com/86584881/156518908-60ff6196-9044-444d-99a7-5b064c442739.png)
 
+
+Simple Light Version  [] Version 5.0 Original
 ![brave3x](https://user-images.githubusercontent.com/86584881/154076333-6fdac27b-d8ae-4c19-92c3-194575512399.png)

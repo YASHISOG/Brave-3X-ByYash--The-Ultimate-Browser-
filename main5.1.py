@@ -1,10 +1,16 @@
+
+# Hello
 '''
-Hello This Is Dark Version Of The Browser 
-I Am Planning To Add Bookmarks
-Owner = YASH RAJ 
-GITHUB + YASHISOG
-TEAM MEMBERS = YASH
+Thanks This Is Yash "The One And Only Developer Of This Python Project
+Credits:-
+1st Thanks @Programming Hero For The GUI Of PyQt5
+2nd Thanks To All Of The Creators Of Games And Other Stuff Like Music Player,Game, etc .. For Letting Me Use This
+3rd All The Songs That Is Used In Music Player By [CWH] Credit Goers To Their Respective Singers.
+================== Modified By {IF U DO ANY MODIFICATIONS WRITE YOUR NAME HERE } =========Thanks For Mod.
 '''
+# Don't Delete this Line This Is Just A Commnet If U Delete This Lines U Have No Longer Rights To Use This Project Anywhere
+# Thank You!
+
 
 from hashlib import new
 import pickle
@@ -22,6 +28,16 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtGui import QPalette, QColor
 from PyQt5.QtWidgets import QInputDialog, QLineEdit, QDialog, QToolBar
+'''
+Thanks This Is Yash "The One And Only Developer Of This Python Project
+Credits:-
+1st Thanks @Programming Hero For The GUI Of PyQt5
+2nd Thanks To All Of The Creators Of Games And Other Stuff Like Music Player,Game, etc .. For Letting Me Use This
+3rd All The Songs That Is Used In Music Player By [CWH] Credit Goers To Their Respective Singers.
+================== Modified By {IF U DO ANY MODIFICATIONS WRITE YOUR NAME HERE } =========Thanks For Mod.
+'''
+# Don't Delete this Line This Is Just A Commnet If U Delete This Lines U Have No Longer Rights To Use This Project Anywhere
+# Thank You!
 class BookMarkToolBar(QtWidgets.QToolBar):
     bookmarkClicked = QtCore.pyqtSignal(QtCore.QUrl, str)
 
@@ -47,7 +63,16 @@ class BookMarkToolBar(QtWidgets.QToolBar):
     def onActionTriggered(self, action):
         bookmark = action.data()
         self.bookmarkClicked.emit(bookmark["url"], bookmark["title"])
-
+'''
+Thanks This Is Yash "The One And Only Developer Of This Python Project
+Credits:-
+1st Thanks @Programming Hero For The GUI Of PyQt5
+2nd Thanks To All Of The Creators Of Games And Other Stuff Like Music Player,Game, etc .. For Letting Me Use This
+3rd All The Songs That Is Used In Music Player By [CWH] Credit Goers To Their Respective Singers.
+================== Modified By {IF U DO ANY MODIFICATIONS WRITE YOUR NAME HERE } =========Thanks For Mod.
+'''
+# Don't Delete this Line This Is Just A Commnet If U Delete This Lines U Have No Longer Rights To Use This Project Anywhere
+# Thank You!
 
 class AboutDialog(QDialog):
     def __init__(self, *args, **kwargs):
@@ -80,7 +105,16 @@ class AboutDialog(QDialog):
         layout.addWidget(self.buttonBox)
 
         self.setLayout(layout)
-
+'''
+Thanks This Is Yash "The One And Only Developer Of This Python Project
+Credits:-
+1st Thanks @Programming Hero For The GUI Of PyQt5
+2nd Thanks To All Of The Creators Of Games And Other Stuff Like Music Player,Game, etc .. For Letting Me Use This
+3rd All The Songs That Is Used In Music Player By [CWH] Credit Goers To Their Respective Singers.
+================== Modified By {IF U DO ANY MODIFICATIONS WRITE YOUR NAME HERE } =========Thanks For Mod.
+'''
+# Don't Delete this Line This Is Just A Commnet If U Delete This Lines U Have No Longer Rights To Use This Project Anywhere
+# Thank You!
 
 class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
@@ -431,6 +465,17 @@ class MainWindow(QMainWindow):
             self.bookmark_bar.addAction(button)
         except:
             print('Button is causing the error')
+'''
+Thanks This Is Yash "The One And Only Developer Of This Python Project
+Credits:-
+1st Thanks @Programming Hero For The GUI Of PyQt5
+2nd Thanks To All Of The Creators Of Games And Other Stuff Like Music Player,Game, etc .. For Letting Me Use This
+3rd All The Songs That Is Used In Music Player By [CWH] Credit Goers To Their Respective Singers.
+================== Modified By {IF U DO ANY MODIFICATIONS WRITE YOUR NAME HERE } =========Thanks For Mod.
+'''
+# Don't Delete this Line This Is Just A Commnet If U Delete This Lines U Have No Longer Rights To Use This Project Anywhere
+# Thank You!
+
 # dark theme============================================
 # Now use a palette to switch to dark colors:
 palette = QPalette()
@@ -459,3 +504,14 @@ app.setOrganizationDomain("https://yash.brizy.site/")
 
 window = MainWindow()
 app.exec_()
+
+'''
+Thanks This Is Yash "The One And Only Developer Of This Python Project
+Credits:-
+1st Thanks @Programming Hero For The GUI Of PyQt5
+2nd Thanks To All Of The Creators Of Games And Other Stuff Like Music Player,Game, etc .. For Letting Me Use This
+3rd All The Songs That Is Used In Music Player By [CWH] Credit Goers To Their Respective Singers.
+================== Modified By {IF U DO ANY MODIFICATIONS WRITE YOUR NAME HERE } =========Thanks For Mod.
+'''
+# Don't Delete this Line This Is Just A Commnet If U Delete This Lines U Have No Longer Rights To Use This Project Anywhere
+# Thank You!

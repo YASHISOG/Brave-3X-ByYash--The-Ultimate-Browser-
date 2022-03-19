@@ -1,4 +1,5 @@
 # Brave-3X--ByYash-The-Ultimate-Browser
+The One And Only Developer Till Version 5.1 [Latest] - Yash Raj 
 Featuring Brave 3X - (BeeS 5.0) 
 A Ultimate Python Browser 
 Install Link - https://bit.ly/brave3xbyyash
